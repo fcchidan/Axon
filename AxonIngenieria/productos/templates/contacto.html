@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block title %} Contactos {% endblock %}
+
+{% block content %}
+<h1 class="title">INFORMACIÓN DE CONTACTO</h1>
+<section id="email">
+    <div class="datos">
+            <h2>Santiago</h2>
+            <h2>+56 9 5136 5520</h2>
+            <h2>contacto@axoningenieria.cl</h2>
+    </div>
+    <div class="container">
+        <h2>Contactanos</h2>
+        <form action="mailto:destinatario@example.com" method="post" enctype="text/plain">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+            <input class="btn" type="submit" value="Enviar">
+        </form>
+    </div>
+</section>
+
+{% endblock %}

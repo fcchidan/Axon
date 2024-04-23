@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block title %} Crear producto {% endblock %}
+
+{% block content %}
+<h1>Agregar producto</h1>
+
+<form action="{% url 'guardar' %}" method="POST">
+    {% csrf_token %}
+    <label for="nombre">Nombre del producto</label>
+    <input type="text" name="nombre" required>
+
+    <label for="descripcion">Descripción</label>
+    <textarea for="content" name="descripcion"></textarea>
+
+    <label for="precio">Precio</label>
+    <input type="number" name="precio" id="" required>
+
+    <label for="sku">SKU</label>
+    <input type="number" name="sku" required>
+
+    <input type="submit" value="Guardar">
+
+</form>
+
+{% endblock %}

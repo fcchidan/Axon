@@ -1,0 +1,130 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+
+        {% endblock %}
+        | Axon ingeniería eléctrica
+    </title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <div id="logotipo">
+            <a href="/inicio"><img src="{% static 'images/iconos/logo-Axon.png' %}" alt="Imagen Axon logo"></a>
+
+            <nav>
+                <ul>
+                    <li class="navsup">
+                        <a href="#">Mi cuenta</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Favoritos</a>
+                    </li>
+                    <li>
+                        <a href="#">Carrito</a>
+                    </li>
+                    <li>
+                        <a href="#">Cerrar sesión</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+        <hr>
+    </header>
+    <nav>
+        <ul>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">CATEGORIAS</a>
+                <div class="dropdown-content">
+                    <a href="#">HOTMELT</a>
+                    <a href="#">LAETUS</a>
+                    <a href="#">ACTUADOR</a>
+                </div>
+            </li>
+            <li>
+                <a href="{% url 'inicio' %}">INICIO</a>
+            </li>
+            <li>
+                <a href="{% url 'productos' %}">PRODUCTOS</a>
+            </li>
+            <li>
+                <a href="{% url 'clientes' %}">CLIENTES</a>
+            </li>
+            <li>
+                <a href="{% url 'contacto' %}">CONTACTO</a>
+            </li>
+            <li>
+                <a href="{% url 'empresa' %}">EMPRESA</a>
+            </li>
+            <li>
+                <a href="{% url 'representacion' %}">REPRESENTACION</a>
+            </li>
+            <li>
+                <a href="{% url 'servicios' %}">SERVICIOS</a>
+            </li>
+            <li>
+                <a href="{% url 'crear' %}">AGREGAR PRODUCTOS</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="content">
+        <div class="box">
+            {% block content %}
+
+            {% endblock %}
+        </div>
+    </div>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box1">
+                <h2>Categorías</h2>
+                <h4>Destacados</h4>
+                <h4>Novedades</h4>
+                <h4>Seleccionados</h4>
+                <a href="{% url 'productos' %}"><h4>Productos</h4></a>
+            </div>
+            <div class="box1">
+                <h2>Contáctanos</h2>
+                <h4>LLÁMANOS AL</h4>
+                <h4>+56 9 5136 5520</h4>
+            </div>
+            <div class="box1">
+                <h2>Formas de pago</h2>
+                <h4>Tarjetas Crédito / Debito</h4>
+                <h4>Transferencia bancaria</h4>
+                <div class="pago">
+                    <img src="{% static 'images/iconos/pago_webpay_w.png' %}" alt="Logo WebPay">
+                </div>
+            </div>
+            <div class="box1">
+                <h2>Información</h2>
+                <a href="/empresa"><h4>Sobre nosotros<h4></a>
+                <h4>Nuestros productos</h4>
+                <h4>Formulario de Contacto</h4>
+            </div>
+            <div class="red-social">
+                <h2>Síguenos</h2>
+                <div class="contenedor">
+                    <img src="{% static 'images/iconos/facebook.png' %}" alt="Logo Facebook">
+                    <img src="{% static 'images/iconos/instagram.png' %}" alt="Logo Instagram">
+                    <img src="{% static 'images/iconos/Whatsapp.png' %}" alt="Logo Whatsapp">
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="grupo-2">
+            <b>Axon ingeniería electrica &copy;  {% now 'Y' %}</b>
+        </div>
+    </footer>
+</body>
+</html>

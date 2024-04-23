@@ -1,0 +1,547 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif, Arial, Helvetica;
+    text-decoration: none;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+header {
+    position: relative;
+    width: 1500px;
+    height: auto;
+    margin: 0px auto;
+}
+
+#logotipo {
+    width: 90%;
+    height: 140px;
+    margin: 0 auto;
+}
+
+#logotipo h1 {
+    display: block;
+    float: left;
+    letter-spacing: 2px;
+    margin-top: 45px;
+    margin-left: 20px;
+    font-weight: lighter;
+    color: white;
+}
+
+#logotipo img {
+    display: block;
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-top: 0px;
+}
+
+nav {
+
+    width: 1500px;
+    height: 50px;
+    margin: 30px;
+    font-size: 15px;
+}
+
+nav ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+nav ul li {
+
+    line-height: 40px;
+    float: left;
+}
+
+nav ul li a {
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #555555;
+    transition: color 0.3s;
+    justify-content: center;
+}
+
+nav ul li a:hover {
+    color: rgb(66,
+            152,
+            233);
+}
+
+.navsup {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background: #F48C17;
+    transition: color 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.dropdown:hover {
+    background: rgb(76,
+            109,
+            255);
+}
+
+.dropbtn {
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#content {
+    width: 1000px;
+    min-height: 930px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.box {
+    width: 90%;
+    min-height: 930px;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.title {
+    color: #0a71b4;
+    letter-spacing: 1px;
+    font-size: 30p;
+}
+
+.titleservicio {
+    color: #222222;
+}
+
+/*servicios primera parte*/
+
+#boxserv-1 .title {
+    text-align: center;
+    color: #222222;
+}
+
+#boxserv-1 .parrafo {
+    position: relative;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 2;
+    margin-top: 10px;
+}
+
+/*segunda parte*/
+
+#boxser-2 h1 {
+    color: #222222;
+}
+
+#boxserv-2 .title {
+    color: #222222;
+    position: relative;
+    right: 20%;
+    top: 150px;
+}
+
+#boxserv-2 .parrafo p {
+    width: 75%;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 2;
+}
+
+#boxserv-2 .parrafo {
+    position: relative;
+    right: 20%;
+    top: 150px;
+}
+
+#boxserv-2 .image img {
+    width: 600px;
+    height: auto;
+}
+
+#boxserv-2 .image {
+    position: relative;
+    left: 500px;
+    top: 50px;
+}
+
+
+#boxserv-2 .list {
+    width: 75%;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 2;
+}
+
+/*inicio*/
+#box1 .slider-box {
+    position: relative;
+    right: 200px;
+    width: 1600px;
+    height: auto;
+    margin: 20px auto 0;
+    overflow: hidden;
+}
+
+#box1 .slider-box ul {
+
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+#box1 .slider-box li {
+
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+#box1 .slider-box img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#box2 .info {
+    display: inline-flex;
+    position: relative;
+    right: 100px;
+    list-style: none;
+    padding-top: 30px;
+}
+
+#box2 .info .info1 {
+    padding: 50px;
+}
+
+#box2 .info .info2 {
+    padding: 50px;
+}
+
+#box2 .info .info3 {
+    padding: 50px;
+}
+
+#content-img3 .box3 {
+    padding-top: 25px;
+    display: flex;
+}
+
+#content-img3 img {
+    position: relative;
+    right: 200px;
+    width: 400px;
+    height: auto;
+    margin-right: 50px;
+}
+
+#content-img .box1 {
+    position: relative;
+    right: 200px;
+    display: flex;
+}
+
+#content-img img {
+    width: 150px;
+    height: 70px;
+    margin-right: 45px;
+    margin-top: 40px;
+}
+
+#content-img {
+    padding-top: 100px;
+}
+
+#content-img h3 {
+    text-align: center;
+}
+
+#content-img3 h3 {
+    text-align: center;
+}
+
+@keyframes slide {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+}
+
+/*productos*/
+
+.productos {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 15px;border-bottom: 1px solid gray;
+    clear: both;
+}
+
+.productos .image{
+    width: 300px;
+    height: auto;
+    float: left;
+    overflow: hidden;
+}
+
+.productos .image img{
+    height: 300px;
+}
+
+.productos .data{
+    float: left;
+    padding: 15px;
+}
+
+.productos .data h2{
+    display: block;
+    color: #222222;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.productos .data .btn{
+    padding: 10px;
+    background: red;
+    color: #fff;
+    border: 1px solid black;
+    display: block;
+    margin-top: 15px;
+    width: 100px;
+    text-align: center;
+}
+
+.productos .data a{
+    color: #0a71b4;
+}
+
+.clearfix {
+    clear: both;
+    float: none;
+}
+/*mensaje*/
+
+.message{
+    padding: 20px;
+    background-color: #F48C17;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/*nosotros*/
+.nos p {
+    padding: 20px;
+    color: #7A7A7A;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 2;
+}
+
+.nos h3 {
+    text-align: center;
+}
+
+/*pagina representacion*/
+.repres .image {
+    position: relative;
+    right: 200px;
+}
+
+.repres .parrafo p {
+    position: relative;
+    bottom: 100px;
+    left: 300px;
+    color: #7A7A7A;
+    margin: 0 0 1.25rem;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 1.5;
+}
+
+.repres p a {
+    color: #0a71b4;
+}
+
+.repres img {
+    width: 50%;
+}
+
+/*contacto*/
+
+.container {
+    display: block;
+    width: 50%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #F48C17;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/*agregar productos*/
+
+form {
+    width: 70%;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="number"] {
+    display: block;
+    width: 70%;
+}
+
+/*Pie pagina*/
+
+.pie-pagina {
+    position: relative;
+    width: 1500px;
+    height: auto;
+    background-color: #203B54;
+}
+
+.pie-pagina .grupo-1 {
+    position: relative;
+    width: 100%;
+    color: aliceblue;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .red-social {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+}
+
+.contenedor img {
+    width: 40px;
+    height: auto;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.pie-pagina .grupo-2 {
+    background-color: #203B54;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-1 .box1 {
+    width: 90%;
+    padding: 20px;
+    margin-left: 40px;
+    line-height: 2;
+    margin-top: 60px;
+}
+
+
+.pie-pagina .grupo-1 .box1 .pago img {
+    width: 200px;
+    height: auto;
+}
+
+a {
+    color: white;
+    font-size: 15px;
+}
+
+h4 {
+    color: white;
+    font-size: 15px;
+}
